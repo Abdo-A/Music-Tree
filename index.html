@@ -1,0 +1,2408 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Music Tree</title>
+	<meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://image.ibb.co/nyhVf6/mytabshortcut.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Amatic+SC|Spectral+SC|Merienda" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+	
+</head>
+
+<body>
+
+
+<!--Start Body-->
+
+<div class="container"> 
+  <h1 class="header">The Music Tree</h1>
+  <p class="paragraph">We believe in your right to be provided by the kind of music you deserve
+    <span id="firsts">music is life</span>
+    <span id="seconds">i can listen, i can live</span>
+    <span id="thirds">Muuuusic</span>
+    <span id="fourths">feed me tunes</span>
+    <span id="fifths">gimme a track</span>
+    <span id="sixths">i love 'em furious</span>
+    <span id="sevenths">new mood = new song</span>
+  </p>
+  
+  <p class="ques">How do you feel now?</p>
+  <div class="logo"><img src="pictures/logo.png"><img src="https://image.ibb.co/iEMStR/myreallogo.jpg"></div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="0">Loved</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="1">Broken</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="2">Alone</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="3">Touched</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="4">Colorless</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="5">Strong</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="6">Naughty</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="7">Flirty</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="8">Jealous</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="9">Dirty</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="10">Pissed off</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="11">Sad</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="12">Proud</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="13">Joyful</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="14">Content</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="15">Unsure</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="16">Racist</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="17">Worried</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="18">High</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="19">Needy</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="20">Indifferent</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="21">Chilled</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="22">Childish</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="23">Weird</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="24">Doubtful</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="25">Simple</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="26">Disappointed</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="27">Angry</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="28">Lazy</div>
+  <div onclick="destroyandplay(this.id)" class="moods" id="29">Rejected</div>
+
+  <button onclick="undo()" id="backbutton" type="button">Back</button>
+  
+  <!--End Body-->
+  
+  <!--///////////////////////////////Start songs/////////////////////////////////-->
+  <div style="visibility:hidden">
+    <audio id="0song" class="songs" loop>
+        <source src="songs/0loved.mp3"> <!--https://www.youtube.com/watch?v=Q0-omvd2u1s second 13 to 4:03 loved-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="1song" class="songs" loop>
+        <source src="songs/1broken.mp3"> <!--https://www.youtube.com/watch?v=BZsXcc_tC-o second 45 to 3:43 broken-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="2song" class="songs" loop>
+        <source src="songs/2alone.mp3"> <!--https://soundcloud.com/fox-adhd/everyone-is-lonely second 4 alone-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="3song" class="songs" loop>
+        <source src="songs/3touched.mp3"> <!--https://www.youtube.com/watch?v=L7XK_zNq930 second 40 to second 5:23 touched-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="4song" class="songs" loop>
+        <source src="songs/4colorless.mp3"> <!--https://www.youtube.com/watch?v=Z_s-Qk07KxA second 10 colorless-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="5song" class="songs" loop>
+        <source src="songs/5strong.mp3"> <!--https://www.youtube.com/watch?v=Xn676-fLq7I to second 3:38 strong-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="6song" class="songs" loop>
+        <source src="songs/6naughty.mp3"> <!--https://www.youtube.com/watch?time_continue=51&v=EK_LN3XEcnw second 51 to second 3:39 naughty-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="7song" class="songs">
+        <source src="songs/7flirty.mp3" loop> <!--https://www.youtube.com/watch?v=Bx3hYRZCs6A flirty-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="8song" class="songs" loop>
+        <source src="songs/8jealous.mp3"> <!--https://www.youtube.com/watch?v=--FUAm3uzDI second 17 to 4:00 jealous-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="9song" class="songs" loop>
+        <source src="songs/9dirty.mp3"> <!--https://www.youtube.com/watch?v=OK4fJhbRL1g second 56 to second 3:36 dirty-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="10song" class="songs" loop>
+        <source src="songs/10pissedoff.mp3"> <!--https://www.youtube.com/watch?v=nfWlot6h_JM to second 3:47  pissed off--> 
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="11song" class="songs" loop>
+        <source src="songs/11sad.mp3"> <!--https://www.youtube.com/watch?v=PKY-smJ6aBQ second 5 to second 2:45 sad-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="12song" class="songs" loop>
+        <source src="songs/12proud.mp3"> <!--https://www.youtube.com/watch?v=mQZmCJUSC6g second 54 to second 4:37 proud-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="13song" class="songs" loop>
+        <source src="songs/13joyful.mp3"> <!--https://www.youtube.com/watch?v=uc2UEfWjvo8 second 22 to second 4:11 joyful-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="14song" class="songs" loop>
+        <source src="songs/14content.mp3"> <!--https://www.youtube.com/watch?v=z_m4Qb0iW-o second 5 to 3:02 content-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="15song" class="songs" loop>
+        <source src="songs/15unsure.mp3"> <!--https://www.youtube.com/watch?v=4yjUuX-I0QE unsure-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="16song" class="songs" loop>
+        <source src="songs/16racist.mp3"> <!--https://www.youtube.com/watch?v=DGk6kULEJtU second 8 to second 3:54 racist-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="17song" class="songs" loop>
+        <source src="songs/17worried.mp3"> <!--https://www.youtube.com/watch?v=d-diB65scQU second 20 to 3:52 worried-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="18song" class="songs" loop>
+        <source src="songs/18high.mp3"> <!--https://www.youtube.com/watch?v=gAYL5H46QnQ second 0 to second 2:38 high-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="19song" class="songs" loop>
+        <source src="songs/19needy.mp3"> <!--https://www.youtube.com/watch?v=fWNaR-rxAic second 28 to second 3:11 needy-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="20song" class="songs" loop>
+        <source src="songs/20indifferent.mp3"> <!--https://www.youtube.com/watch?v=nbY_aP-alkw second 4 to 1:50 indifferent-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="21song" class="songs" loop>
+        <source src="songs/21chilled.mp3"> <!--https://www.youtube.com/watch?v=DAmOWCwnQJI second 6 to 2:40 chilled-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="22song" class="songs" loop>
+        <source src="songs/22childish.mp3"> <!--https://www.youtube.com/watch?v=MtN1YnoL46Q second 3 childish-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="23song" class="songs" loop>
+        <source src="songs/23weird.mp3"> <!--https://www.youtube.com/watch?v=6CXiB5n883I to second 2:50 weird-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="24song" class="songs" loop>
+        <source src="songs/24doubtful.mp3"> <!--https://www.youtube.com/watch?v=zK2ZuescJGA second 30 to second 5:19 doubtful-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="25song" class="songs" loop>
+        <source src="songs/25simple.mp3"> <!--https://www.youtube.com/watch?v=PoaT6WXUV_M second 10 to second 3:52 simple-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="26song" class="songs" loop>
+        <source src="songs/26disappointed.mp3"> <!--https://soundcloud.com/gracedaviesofficial/hello-adele second 6 disappointed-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="27song" class="songs" loop>
+        <source src="songs/27angry.mp3"> <!--https://www.youtube.com/watch?v=mJ9oLwi2Q7c second 5 to second 3:55 angry-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="28song" class="songs" loop>
+        <source src="songs/28lazy.mp3"> <!--https://www.youtube.com/watch?v=fLexgOxsZu0 second 6 to second 3:15 lazy-->
+    </audio> 
+  </div>
+  <div style="visibility:hidden">
+    <audio id="29song" class="songs" loop>
+        <source src="songs/29rejected.mp3"> <!--https://www.youtube.com/watch?v=4jAyZ4njHsc second 15 to second 4:14 rejected-->
+    </audio> 
+  </div>
+  <!--converting website:https://convert.to-mp3.online/   audioquality:128-->
+  <!--///////////////////////////////////End songs/////////////////////////////////-->
+  
+  <!--//////////////////////////////Start effects//////////////////////////////////-->
+  <div id="0effect" class="effects">
+    <p>I like your smile<br>
+I like your vibe<br>
+I like your style<br>
+But that's not why I love you<br>
+<br>
+And I, I like the way<br>
+You're such a star<br>
+But that's not why I love you<br>
+Hey<br>
+Do you feel, do you feel me?<br>
+Do you feel what I feel, too?<br>
+Do you need, do you need me?<br>
+Do you need me?<br>
+<br>
+[Chorus:]<br>
+You're so beautiful<br>
+But that's not why I love you<br>
+I'm not sure you know<br>
+That the reason I love you is you<br>
+Being you<br>
+Just you<br>
+Yeah the reason I love you is all that we've been through<br>
+And that's why I love you<br>
+<br>
+La la<br>
+La la la la<br>
+La la<br>
+La la la<br>
+I like the way you misbehave<br>
+When we get wasted<br>
+But that's not why I love you<br>
+And how you keep your cool<br>
+When I am complicated<br>
+But that's not why I love you<br>
+<br>
+Hey<br>
+Do you feel, do you feel me?<br>
+Do you feel what I feel, too?<br>
+Do you need, do you need me?<br>
+<br>
+Do you need me?<br>
+<br>
+[Chorus]<br>
+You're so beautiful<br>
+But that's not why I love you<br>
+And I'm not sure you know<br>
+That the reason I love you is you<br>
+Being you<br>
+Just you<br>
+Yeah the reason I love you is all that we've been through<br>
+And that's why I love you<br>
+<br>
+Yeah - Oh.<br>
+Oh.<br>
+<br>
+Even though we didn't make it through<br>
+I am always here for you<br>
+Yeah, yeah, yeah<br>
+<br>
+[Chorus:]<br>
+You're so beautiful<br>
+But that's not why I love you<br>
+I'm not sure you know<br>
+That the reason I love you is you<br>
+Being you<br>
+Just you<br>
+Yeah the reason I love you is all that we've been through<br>
+And that's why I love you<br>
+<br>
+La la<br>
+La la la la (oh oh)<br>
+La la<br>
+La la la (That's why I love you)<br>
+<br>
+La la<br>
+La la la la (oh oh)<br>
+La la<br>
+La la la (That's why I love you)
+    </p>
+    <img src="pictures/moodspictures/0loved.jpg"></div>
+  
+  
+  <div id="1effect" class="effects">
+    <p>Without you, I feel broke.<br>
+Like I'm half of a whole.<br>
+Without you, I've got no hand to hold.<br>
+Without you, I feel torn.<br>
+Like a sail in a storm.<br>
+Without you, I'm just a sad song.<br>
+I'm just a sad song.<br>
+<br>
+With you I fall.<br>
+It's like I'm leaving all my past in silhouettes upon the wall.<br>
+With you I'm a beautiful mess.<br>
+It's like we're standing hand in hand with all our fears upon the edge.<br>
+<br>
+So stop time right here in the moonlight,<br>
+'Cause I don't ever wanna close my eyes.<br>
+<br>
+Without you, I feel broke.<br>
+Like I'm half of a whole.<br>
+Without you, I've got no hand to hold.<br>
+Without you, I feel torn.<br>
+Like a sail in a storm.<br>
+Without you, I'm just a sad song.<br>
+<br>
+You're the perfect melody,<br>
+The only harmony<br>
+I wanna hear.<br>
+You're my favorite part of me,<br>
+With you standing next to me,<br>
+I've got nothing to fear.<br>
+<br>
+Without you, I feel broke.<br>
+Like I'm half of a whole.<br>
+Without you, I've got no hand to hold.<br>
+Without you, I feel torn.<br>
+Like a sail in a storm.<br>
+Without you, I'm just a sad song.<br>
+<br>
+Without you, I feel broke.<br>
+Like I'm half of a whole.<br>
+Without you, I've got no hand to hold.<br>
+Without you, I feel torn.<br>
+Like a sail in a storm.<br>
+Without you, I'm just a sad song.<br>
+I'm just a sad song.<br>
+
+    </p>
+    <img src="pictures/moodspictures/1broken.jpg"></div>
+  
+  
+  <div id="2effect" class="effects">
+    <p>We&rsquo;re all the same <br>
+No matter how we&rsquo;ve grown <br>
+Colors of our skin <br>
+Defections in our bones <br>
+<br>
+There's one thing we share <br>
+Everyone everywhere <br>
+We're all alone <br>
+We're all alone. <br>
+<br>
+Everyone is fundamentally lonely <br>
+Whether you trust science or a church <br>
+Because we&rsquo;re scared <br>
+Some of us make pairs <br>
+And some of us are still on the search <br>
+<br>
+But everyone is fundamentally lonely <br>
+So here&rsquo;s daily advice <br>
+You&rsquo;re in pain <br>
+And everyone feels the same <br>
+So just be ..... nice. <br>
+<br>
+What do you lose <br>
+When life&rsquo;s already the worst <br>
+Leave a bigger tip <br>
+Let that guy in line first <br>
+<br>
+We&rsquo;re all lonely <br>
+Pay for their coffee <br>
+Pick up that trash <br>
+I know it&rsquo;s not your trash. <br>
+<br>
+Everyone is fundamentally lonely <br>
+Sometimes it comes out as rage <br>
+Screaming in a store <br>
+Cause they&rsquo;re lonely at the core <br>
+So be calm when you engage <br>
+<br>
+Everyone is fundamentally lonely <br>
+And I&rsquo;m not saying to sacrifice <br>
+Lend some support <br>
+At the airport <br>
+It won&rsquo;t kill you to be nice. <br>
+<br>
+Everything is stupid <br>
+Success is a projection <br>
+We&rsquo;re all quietly helpless <br>
+Being nice is a connection <br>
+<br>
+Blaring your car horn <br>
+Won&rsquo;t make you feel tremendous <br>
+But picking up something someone dropped <br>
+Will make this whole thing less horrendous <br>
+<br>
+Everyone is fundamentally lonely <br>
+Even the ones who pretend they&rsquo;re not <br>
+Be nice today <br>
+It&rsquo;ll make things just slightly ok <br>
+On this lonely, little blue dot.
+    </p>
+    <img src="pictures/moodspictures/2alone.jpg"></div>
+  
+  
+  <div id="3effect" class="effects">
+    <p>I woke up cryin' late at night when I was very young<br>
+I had dreamed my father had passed away and gone<br>
+My world revolved around him, I couldn't lie there anymore<br>
+So I made my way down the mirrored hall<br>
+And tapped upon his door<br>
+<br>
+And I said, &quot;Daddy, I'm so afraid<br>
+How will I go on, with you gone that way?<br>
+Don't wanna cry anymore so may I stay with you?&quot;<br>
+And he said, &quot;That's my job, that's what I do<br>
+Everything I do is because of you<br>
+To keep you safe with me, that's my job, you see.&quot;<br>
+<br>
+Later we barely got along, this teenage boy and he<br>
+Most of the fights it seems were over different dreams<br>
+We each held for me<br>
+He wanted knowledge and learning, I wanted to fly out west<br>
+I said, &quot;I could make it out there if I just had the fare<br>
+I got half, will you loan me the rest?&quot;<br>
+<br>
+And I said, &quot;Daddy, I'm so afraid<br>
+There's no guarantee in the plans I've made<br>
+And if I should fail, who will pay my way back home?&quot;<br>
+And he said, &quot;That's my job, that's what I do<br>
+Everything I do is because of you<br>
+To keep you safe with me, that's my job, you see.&quot;<br>
+<br>
+Every person carves his spot and fills the hole with life<br>
+And I pray someday I might light as bright as he<br>
+<br>
+Woke up early one bright fall day to spread the tragic news<br>
+After all my travel, I settled down within a mile or two<br>
+I make my livin' with words and rhymes and all this tragedy<br>
+Should go into my head and out instead as bits of poetry<br>
+<br>
+But I say, &quot;Daddy I'm so afraid<br>
+How will I go on with you gone this way?<br>
+How can I come up with a song to say, I love you?&quot;<br>
+&quot;That's my job, that's what I do<br>
+Everything I do is because of you<br>
+To keep you safe with me, that's my job, you see.&quot;<br>
+&quot;Everything I do is because of you<br>
+To keep you safe with me.&quot;
+    </p>
+    <img src="pictures/moodspictures/3touched.jpg"></div>
+  
+  
+  <div id="4effect" class="effects">
+    <p>Now Daddy didn't like trouble, but if it came along<br>
+Everyone that knew him knew which side that he'd be on<br>
+He never was a hero, or this county's shinin' light<br>
+But you could always find him standin' up<br>
+For what he thought was right<br>
+<br>
+He'd say, &quot;You've got to stand for something or you'll fall for anything<br>
+You've got to be your own man not a puppet on a string<br>
+Never compromise what's right and uphold your family name<br>
+You've got to stand for something or you'll fall for anything&quot;<br>
+<br>
+Now we might've been better off or owned a bigger house<br>
+If Daddy had done more givin' in or a little more backin' down<br>
+But we always had plenty just living his advice<br>
+&quot;Whatever you do today you'll have to sleep with tonight&quot;<br>
+<br>
+He'd say, &quot;You've got to stand for something or you'll fall for anything<br>
+You've got to be your own man, not a puppet on a string<br>
+Never compromise what's right, and uphold your family name<br>
+You've got to stand for something or you'll fall for anything&quot;<br>
+<br>
+And I know that things are different than they were in Daddy's day<br>
+But I still believe what makes a man really hasn't changed<br>
+<br>
+You've got to stand for something or you'll fall for anything<br>
+You've got to be your own man, not a puppet on a string<br>
+Never compromise what's right, and uphold your family name<br>
+You've got to stand for something or you'll fall for anything<br>
+You've got to stand for something or you'll fall for anything
+    </p>
+    <img src="pictures/moodspictures/4colorless.jpg"></div>
+  
+  
+  <div id="5effect" class="effects">
+    <p>You know.. the bed feels warmer<br>
+Sleeping here alone<br>
+You know I dream in colour<br>
+And do the things I want<br>
+<br>
+You think you got the best of me<br>
+Think you've had the last laugh<br>
+Bet you think that everything good is gone<br>
+Think you left me broken down<br>
+Think that I'd come running back<br>
+Baby you don't know me, cause you're dead wrong<br>
+<br>
+What doesn't kill you makes you stronger<br>
+Stand a little taller<br>
+Doesn't mean I'm lonely when I'm alone<br>
+What doesn't kill you makes a fighter<br>
+Footsteps even lighter<br>
+Doesn't mean I'm over cause you're gone<br>
+<br>
+What doesn't kill you makes you stronger, stronger<br>
+Just me, myself and I<br>
+What doesn't kill you makes you stronger<br>
+Stand a little taller<br>
+Doesn't mean I'm lonely when I'm alone<br>
+<br>
+You heard that I was starting over with someone new<br>
+They told you I was moving on over you<br>
+<br>
+You didn't think that I'd come back<br>
+I'd come back swinging<br>
+You try to break me, but you see<br>
+<br>
+What doesn't kill you makes you stronger<br>
+Stand a little taller<br>
+Doesn't mean I'm lonely when I'm alone<br>
+What doesn't kill you makes a fighter<br>
+Footsteps even lighter<br>
+Doesn't mean I'm over cause you're gone<br>
+<br>
+What doesn't kill you makes you stronger, stronger<br>
+Just me, myself and I<br>
+What doesn't kill you makes you stronger<br>
+Stand a little taller<br>
+Doesn't mean I'm lonely when I'm alone<br>
+<br>
+Thanks to you I got a new thing started<br>
+Thanks to you I'm not the broken-hearted<br>
+Thanks to you I'm finally thinking about me<br>
+You know in the end the day you left was just my beginning<br>
+In the end...<br>
+<br>
+What doesn't kill you makes you stronger<br>
+Stand a little taller<br>
+Doesn't mean I'm lonely when I'm alone<br>
+What doesn't kill you makes a fighter<br>
+Footsteps even lighter<br>
+Doesn't mean I'm over cause you're gone<br>
+<br>
+[2x]<br>
+What doesn't kill you makes you stronger, stronger<br>
+Just me, myself and I<br>
+What doesn't kill you makes you stronger<br>
+Stand a little taller<br>
+Doesn't mean I'm lonely when I'm alone<br>
+<br>
+(When I'm alone)
+    </p>
+    <img src="pictures/moodspictures/5strong.jpg"></div>
+  
+  
+  <div id="6effect" class="effects">
+    <p>A little bit of Monica <br> in my life!<br>
+A little bit of Erica <br> by my side!<br>
+A little bit of Rita <br> is all I need!<br>
+A little bit of Tina <br> is what I see!<br>
+A little bit of Sandra <br> in the sun!<br>
+A little bit of Mary <br> all night long!<br>
+A little bit of Jessica <br> here I am!<br>
+A little bit of you makes me your man!!<br>
+ <br>
+<br>
+Mambo No. 5!<br>
+<br>
+[Verse 2]<br>
+Jump up and down and move it all around<br>
+Shake your head to the sound<br>
+Put your hands on the ground<br>
+Take one step left and one step right<br>
+One to the front and one to the side<br>
+Clap your hands once and clap your hands twice<br>
+And if it looks like this then you're doing it right<br>
+<br>
+[Hook]<br>
+A little bit of Monica <br> in my life!<br>
+A little bit of Erica <br> by my side!<br>
+A little bit of Rita <br> is all I need!<br>
+A little bit of Tina <br> is what I see!<br>
+A little bit of Sandra <br> in the sun!<br>
+A little bit of Mary <br> all night long!<br>
+A little bit of Jessica <br> here I am!<br>
+A little bit of you makes me your man!!<br>
+<br>
+[Bridge]<br>
+Trumpet!<br>
+The trumpet!<br>
+Mambo No. 5!<br>
+(ha ha ha)<br>
+ <br>
+<br>
+[Hook]<br>
+A little bit of Monica <br> in my life!<br>
+A little bit of Erica <br> by my side!<br>
+A little bit of Rita <br> is all I need!<br>
+A little bit of Tina <br> is what I see!<br>
+A little bit of Sandra <br> in the sun!<br>
+A little bit of Mary <br> all night long!<br>
+A little bit of Jessica <br> here I am!<br>
+A little bit of you makes me your man!!<br>
+<br>
+[Outro]<br>
+I do all I do<br>
+To fall in love with a girl like you<br>
+You can't run and you can't hide<br>
+You and me gonna touch the sky<br>
+<br>
+Mambo No. 5!
+    </p>
+    <img src="pictures/moodspictures/6naughty.jpg"></div>
+  
+  
+  <div id="7effect" class="effects">
+    <p>You are the winter following spring<br>
+You are the sun that summertime brings<br>
+You are the stars in the night time sky<br>
+You are my girl and i'm your guy<br>
+You got me all tight up in knots<br>
+And i'm lovin' you lots and lots<br>
+I'm just lovin' you lots and lots<br>
+I'm lovin' you lots and lots<br>
+Uh, uh, ah, uh, uh, ah, uh, uh, ah, uh, uh-uh<br>
+Uh, uh, uh, uh, uh, uh, uh, uh-uh, uh, uh, uh-uh-uh<br>
+You are as fresh as the morning air<br>
+You are cute as a cuddly bear<br>
+You are soft as a baby's sigh<br>
+You are my girl and i'm your guy<br>
+That's why i'm lovin' you lots and lots<br>
+I'm just lovin' you lots and lots<br>
+I'm all tighted up in knots<br>
+I'm just lovin' you lots and lots<br>
+You got me all tight up in knots<br>
+And i'm lovin' you lots and lots<br>
+I'm just lovin' you lots and lots<br>
+I'm lovin' you lots and lots<br>
+Lovin' you lots and lots<br>
+Lovin' you lots and lots<br>
+Lo-vin' you lots and lots
+    </p>
+    <img src="pictures/moodspictures/7flirty.jpg"></div>
+  
+  
+  <div id="8effect" class="effects">
+    <p>She's got green eyes<br>
+And she's 5'5&quot;<br>
+Long brown hair<br>
+All down her back<br>
+Cadillac truck<br>
+So the hell what<br>
+What's so special about that?<br>
+<br>
+She used to model<br>
+She's done some acting<br>
+So she weighs buck of 5<br>
+So I guess she's alright<br>
+If perfection is what you like<br>
+<br>
+[Bridge:]<br>
+Ooh, ooh<br>
+And I'm not jealous<br>
+No, I'm not<br>
+Ooh, ooh<br>
+I just want everything she's got<br>
+<br>
+Ooh, ooh<br>
+You look at her so amazed<br>
+I remember way back<br>
+When you used to look at me that way<br>
+ <br>
+<br>
+[Chorus:]<br>
+Tell me what makes her<br>
+So much better than me (so much better than me)<br>
+What makes her just everything<br>
+That I can never be<br>
+<br>
+What makes her your every dream and fantasy<br>
+Because I can't remember<br>
+When it was me<br>
+<br>
+<br>
+And now you don't feel the same<br>
+I remember you would shiver<br>
+Every time I said your name<br>
+<br>
+You said nothing felt as good<br>
+As when you gaze into my eyes<br>
+Now you don't care I'm alive<br>
+How did we let the fire die?<br>
+<br>
+<br>
+<br>
+[Bridge:]<br>
+That made you smile<br>
+That made you laugh<br>
+Even if it makes you happier<br>
+Than you have ever been (oh me)
+    </p>
+    <img src="pictures/moodspictures/8jealous.jpg"></div>
+  
+  
+  <div id="9effect" class="effects">
+    <p>Fuck you<br>
+Fuck you very, very much<br>
+'Cause your words don't translate<br>
+And it's getting quite late<br>
+So please don't stay in touch<br>
+<br>
+Do you get<br>
+Do you get a little kick out of being slow-minded?<br>
+You want to be like your father<br>
+It's approval you're after<br>
+Well that's not how you find it<br>
+<br>
+Do you<br>
+Do you really enjoy living a life that's so hateful?<br>
+'Cause there's a hole where your soul should be<br>
+You're losing control of it and it's really distasteful<br>
+<br>
+Fuck you<br>
+Fuck you very, very much<br>
+'Cause we hate what you do<br>
+And we hate your whole crew<br>
+So please don't stay in touch<br>
+<br>
+Fuck you<br>
+Fuck you very, very much<br>
+'Cause your words don't translate and it's getting quite late<br>
+So please don't stay in touch<br>
+<br>
+Fuck you, fuck you, fuck you,<br>
+Fuck you, fuck you, fuck you,<br>
+Fuck you<br>
+<br>
+You say, you think we need to go to war<br>
+Well you're already in one,<br>
+'Cause its people like you<br>
+That need to get slew<br>
+No one wants your opinion<br>
+<br>
+Fuck you<br>
+Fuck you very, very much<br>
+'Cause we hate what you do<br>
+And we hate your whole crew<br>
+So please don't stay in touch<br>
+<br>
+Fuck you<br>
+Fuck you very, very much<br>
+'Cause your words don't translate and it's getting quite late<br>
+So please don't stay in touch<br>
+<br>
+Fuck you, fuck you, fuck you<br>
+Fuck you, fuck you, fuck you
+    </p>
+    <img src="pictures/moodspictures/9dirty.jpg"></div>
+  
+  
+  <div id="10effect" class="effects">
+    <p>I stay out too late<br>
+Got nothing in my brain<br>
+That's what people say, mmm-mmm<br>
+That's what people say, mmm-mmm<br>
+<br>
+I go on too many dates [chuckle]<br>
+But I can't make them stay<br>
+At least that's what people say, mmm-mmm<br>
+That's what people say, mmm-mmm<br>
+<br>
+But I keep cruising<br>
+Can't stop, won't stop moving<br>
+It's like I got this music<br>
+In my mind<br>
+Saying, &quot;It's gonna be alright.&quot;<br>
+<br>
+'Cause the players gonna play,<br>
+play, play, play, play<br>
+And the haters gonna hate,<br>
+hate, hate, hate, hate<br>
+Baby, I'm just gonna shake,<br>
+shake, shake, shake, shake<br>
+I shake it off, I shake it off<br>
+Heart-breakers gonna break,<br>
+break, break, break, break<br>
+And the fakers gonna fake,<br>
+fake, fake, fake, fake<br>
+Baby, I'm just gonna shake,<br>
+shake, shake, shake, shake<br>
+I shake it off, I shake it off<br>
+<br>
+I never miss a beat<br>
+I'm lightning on my feet<br>
+And that's what they don't see, mmm-mmm<br>
+That's what they don't see, mmm-mmm<br>
+<br>
+I'm dancing on my own<br>
+(dancing on my own)<br>
+I make the moves up as I go<br>
+(moves up as I go)<br>
+And that's what they don't know,<br>
+mmm-mmm<br>
+That's what they don't know,<br>
+mmm-mmm<br>
+<br>
+But I keep cruising<br>
+Can't stop, won't stop grooving<br>
+It's like I got this music<br>
+In my mind<br>
+Saying, &quot;It's gonna be alright.&quot;<br>
+<br>
+'Cause the players gonna<br>
+play, play, play, play, play<br>
+And the haters gonna hate,<br>
+hate, hate, hate, hate<br>
+Baby, I'm just gonna shake,<br>
+shake, shake, shake, shake<br>
+I shake it off, I shake it off<br>
+Heart-breakers gonna break,<br>
+break, break, break, break<br>
+And the fakers gonna fake,<br>
+fake, fake, fake, fake<br>
+Baby, I'm just gonna shake,<br>
+shake, shake, shake, shake<br>
+I shake it off, I shake it off<br>
+<br>
+Shake it off, I shake it off,<br>
+I, I, I shake it off, I shake it off,<br>
+I, I, I shake it off, I shake it off,<br>
+I, I, I shake it off, I shake it off<br>
+<br>
+Hey, hey, hey<br>
+Just think while you've been getting down<br>
+and out about the liars and the dirty,<br>
+dirty cheats of the world,<br>
+You could've been getting down to this sick beat.<br>
+<br>
+My ex-man brought his new girlfriend<br>
+She's like &quot;Oh, my god!&quot;<br>
+but I'm just gonna shake.<br>
+And to the fella over there<br>
+with the hella good hair<br>
+Won't you come on over, baby?<br>
+We can shake, shake, shake<br>
+<br>
+Yeah ohhh<br>
+<br>
+'Cause the players gonna play,<br>
+play, play, play, play<br>
+And the haters gonna hate,<br>
+hate, hate, hate, hate<br>
+(haters gonna hate)<br>
+I'm just gonna shake,<br>
+shake, shake, shake, shake<br>
+I shake it off, I shake it off<br>
+Heart-breakers gonna break, break,<br>
+break, break, break (mmmm)<br>
+And the fakers gonna fake,<br>
+fake, fake, fake, fake<br>
+(and fake, and fake, and fake)<br>
+Baby, I'm just gonna shake,<br>
+shake, shake, shake, shake<br>
+I shake it off, I shake it off<br>
+<br>
+Shake it off, I shake it off,<br>
+I, I, I shake it off, I shake it off,<br>
+I, I, I shake it off, I shake it off<br>
+I, I, I shake it off, I shake it off<br>
+<br>
+Shake it off, I shake it off,<br>
+I, I, I shake it off, I shake it off,<br>
+I, I, I shake it off, I shake it off,<br>
+I, I, I shake it off, I shake it off<br>
+<br>
+Shake it off, I shake it off,<br>
+I, I, I shake it off, I shake it off<br>
+(you've got to),<br>
+I, I, I shake it off, I shake it off,<br>
+I, I, I shake it off, I shake it off
+    </p>
+    <img src="pictures/moodspictures/10pissedoff.jpg"></div>
+  
+  
+  <div id="11effect" class="effects">
+    <p>A winter's day<br>
+In a deep and dark December<br>
+I am alone<br>
+Gazing from my window<br>
+To the streets below<br>
+On a freshly fallen, silent shroud of snow<br>
+I am a rock<br>
+I am an island<br>
+<br>
+I've built walls<br>
+A fortress, steep and mighty<br>
+That none may penetrate<br>
+I have no need of friendship<br>
+Friendship causes pain.<br>
+It's laughter and it's loving I disdain.<br>
+I am a rock<br>
+I am an island<br>
+<br>
+Don't talk of love<br>
+Well, I've heard the words before<br>
+It's sleeping in my memory<br>
+And I won't disturb the slumber<br>
+Of feelings that have died<br>
+If I never loved, I never would have cried<br>
+I am a rock<br>
+I am an island<br>
+<br>
+I have my books<br>
+And my poetry to protect me<br>
+I am shielded in my armor<br>
+Hiding in my room<br>
+Safe within my womb<br>
+I touch no one and no one touches me<br>
+I am a rock<br>
+I am an island<br>
+<br>
+And a rock feels no pain<br>
+And an island never cries<br>
+
+    </p>
+    <img src="pictures/moodspictures/11sad.jpg"></div>
+  
+  
+  <div id="12effect" class="effects">
+    <p>You're so vain,<br>
+you probably think this song is about you<br>
+You're so vain,<br>
+I'll bet you think this song is about you<br>
+Don't you? Don't You?<br>
+<br>
+You had me several years ago,<br>
+when I was still quite naive<br>
+Well you said that we made <br>
+such a pretty pair<br>
+And that you would never leave<br>
+But you gave away the things<br>
+you loved and one of them was me<br>
+I had some dreams,<br>
+they were clouds in my coffee<br>
+Clouds in my coffee, and...<br>
+<br>
+You're so vain,<br>
+you probably think this song is about you<br>
+You're so vain,<br>
+I'll bet you think this song is about you<br>
+Don't you? Don't You?<br>
+<br>
+I had some dreams<br>
+they were clouds in my coffee<br>
+Clouds in my coffee, and...<br>
+<br>
+You're so vain,<br>
+you probably think this song is about you<br>
+You're so vain,<br>
+I'll bet you think this song is about you<br>
+Don't you? Don't You?<br>
+<br>
+Well I hear you went up to Saratoga<br>
+and your horse naturally won<br>
+Then you flew your Lear jet<br>
+up to Nova Scotia<br>
+To see the total eclipse of the sun<br>
+Well you're where you should be<br>
+all the time<br>
+And when you're not you're with<br>
+Some underworld spy<br>
+or the wife of a close friend<br>
+Wife of a close friend, and...<br>
+<br>
+You're so vain,<br>
+you probably think this song is about you<br>
+You're so vain,<br>
+I'll bet you think this song is about you<br>
+Don't you? Don't You? Don't You?<br>
+<br>
+You're so vain,<br>
+you probably think this song is about you<br>
+You're so vain,<br>
+I'll bet you think this song is about you<br>
+Don't you? Don't You?<br>
+
+    </p>
+    <img src="pictures/moodspictures/12proud.jpg"></div>
+  
+  
+  <div id="13effect" class="effects">
+    <p>
+A La La La La Long<br>
+A La La La La Long Long<br>
+Li Long Long Long.<br>
+Come On!<br>
+A La La La La Long<br>
+A La La La La Long Long<br>
+Li Long Long Long.<br>
+<br>
+Standing across the room I saw you smile.<br>
+I said I want to talk to you for a little while.<br>
+But before I make my move<br>
+my emotions start running wild.<br>
+My tongue gets tied and that's no lie.<br>
+I'm looking in your eye<br>
+I'm looking in your big brown eye.<br>
+(Ooh yeah)<br>
+(and I've got this to say to you)<br>
+<br>
+Girl I want to make you sweat<br>
+Sweat 'til you can't sweat no more.<br>
+And if you cry out<br>
+I'm gonna push it some more.<br>
+Girl I want to make you sweat<br>
+Sweat 'til you can't sweat no more.<br>
+And if you cry out I'm gonna push it<br>
+Push it push it some more.<br>
+<br>
+A La La La La Long<br>
+A La La La La Long Long<br>
+Li Long Long Long.<br>
+Come on!<br>
+A La La La La Long<br>
+A La La La La Long Long<br>
+Li Long Long Long.<br>
+<br>
+So I say to myself<br>
+if she loves me or not<br>
+But the dread are known<br>
+that love is here to get<br>
+And with a little bit of this<br>
+and a little bit of that<br>
+The lyrics goes on the attack<br>
+My tongue gets tied<br>
+And thats no lie<br>
+Im looking in your eyes<br>
+Im looking in your big brown eyes<br>
+Ooh yeah<br>
+(and I've got this to say to you)<br>
+<br>
+Girl I want to make you sweat<br>
+Sweat 'til you can't sweat no more.<br>
+And if you cry out<br>
+I'm gonna push it some more.<br>
+Girl I want to make you sweat<br>
+Sweat 'til you can't sweat no more.<br>
+And if you cry out I'm gonna push it<br>
+Push it push it some more.<br>
+<br>
+A La La La La Long<br>
+A La La La La Long Long<br>
+Li Long Long Long.<br>
+(ooh yeah)<br>
+A La La La La Long<br>
+A La La La La Long Long<br>
+Li Long Long Long.<br>
+(one more time)<br>
+A La La La La Long<br>
+A La La La La Long Long<br>
+Li Long Long Long.<br>
+(sing it)<br>
+A La La La La Long<br>
+A La La La La Long Long<br>
+Li Long Long Long.<br>
+(hey oohooh weee yeah)<br>
+<br>
+Eyes, I'm Looking in your big brown eyes<br>
+(and I've got this to say to you)<br>
+<br>
+Girl I want to make you sweat<br>
+Sweat 'til you can't sweat no more.<br>
+And if you cry out<br>
+I'm gonna push it some more.<br>
+Girl I want to make you sweat<br>
+Sweat 'til you can't sweat no more.<br>
+And if you cry out I'm gonna push it<br>
+Push it push it some more.<br>
+<br>
+A La La La La Long<br>
+A La La La La Long Long<br>
+Li Long Long Long.<br>
+(yeah)<br>
+A La La La La Long<br>
+A La La La La Long Long<br>
+Li Long Long Long.<br>
+(Push it, push it some more)<br>
+A La La La La Long<br>
+A La La La La Long Long<br>
+Li Long Long Long.<br>
+(alright!)<br>
+A La La La La Long<br>
+A La La La La Long Long<br>
+Li Long Long Long.<br>
+(Push it, push it some more)
+    </p>
+    <img src="pictures/moodspictures/13joyful.jpg"></div>
+  
+  
+  <div id="14effect" class="effects">
+    <p>When you're alone<br>
+and life is making you lonely<br>
+You can always go downtown<br>
+When you've got worries,<br>
+all the noise and the hurry<br>
+Seems to help, I know, downtown<br>
+<br>
+Just listen to the music<br>
+of the traffic in the city<br>
+Linger on the sidewalk<br>
+where the neon signs are pretty<br>
+How can you lose?<br>
+The lights are much brighter there<br>
+You can forget all your troubles,<br>
+forget all your cares<br>
+<br>
+So go downtown<br>
+Things will be great<br>
+when you're downtown<br>
+No finer place for sure, downtown<br>
+Everything's waiting for you<br>
+<br>
+Don't hang around<br>
+and let your problems surround you<br>
+There are movie shows downtown<br>
+Maybe you know some little places to go to<br>
+Where they never close downtown<br>
+<br>
+Just listen to the rhythm<br>
+of a gentle bossa nova<br>
+You'll be dancing with 'em too<br>
+before the night is over<br>
+Happy again<br>
+The lights are much brighter there<br>
+You can forget all your troubles,<br>
+forget all your cares<br>
+ <br>
+<br>
+So go downtown<br>
+Where all the lights are bright, downtown<br>
+Waiting for you tonight, downtown<br>
+You're gonna be alright now, downtown<br>
+<br>
+Downtown<br>
+Downtown<br>
+<br>
+And you may find somebody kind<br>
+to help and understand you<br>
+Someone who is just like you<br>
+and needs a gentle hand to<br>
+Guide them along<br>
+So maybe I'll see you there<br>
+We can forget all our troubles,<br>
+forget all our cares<br>
+<br>
+So go downtown<br>
+Things will be great<br>
+when you're downtown<br>
+Don't wait a minute more,<br>
+downtown<br>
+Everything is waiting for you,<br>
+downtown<br>
+<br>
+Downtown (downtown)<br>
+Downtown (downtown)<br>
+Downtown (downtown)<br>
+Downtown (downtown)
+    </p>
+    <img src="pictures/moodspictures/14content.jpg"></div>
+  
+  
+  <div id="15effect" class="effects">
+    <p>If I fell in love with you<br>
+Would you promise to be true<br>
+And help me understand<br>
+Cos I've been in love before<br>
+And I found that love was more<br>
+Than just holding hands<br>
+<br>
+If I give my heart to you<br>
+I must be sure<br>
+From the very start<br>
+That you would love me more than her<br>
+<br>
+If I trust in you oh please<br>
+Don't run and hide<br>
+If I love you too oh please<br>
+Don't hurt my pride like her<br>
+Cos I couldn't stand the pain<br>
+And I would be sad<br>
+if our new love was in vain<br>
+<br>
+So I hope you see that I<br>
+Would love to love you<br>
+And that she will cry<br>
+When she learns we are two<br>
+Cos I couldn't stand the pain<br>
+And I would be sad<br>
+if our new love was in vain<br>
+<br>
+So I hope you see that I<br>
+Would love to love you<br>
+And that she will cry<br>
+When she learns we are two<br>
+If I fell in love with you
+    </p>
+    <img src="pictures/moodspictures/15unsure.jpg"></div>
+  
+  
+  <div id="16effect" class="effects">
+    <p>I think that every race<br>
+is a-okay<br>
+We all have something to be proud of<br>
+(except white people)<br>
+<br>
+I like very country the same,<br>
+even the ones<br>
+where my own music's not allowed in<br>
+or the ones that wanna bomb us!<br>
+<br>
+Women are as smart as me and you<br>
+No! No! It's true!<br>
+They could be president of this country,<br>
+I mean who cares?<br>
+There's already a black!<br>
+<br>
+I love minorities<br>
+especially, people that get around<br>
+in wheelchairs<br>
+That's hot!<br>
+<br>
+I love everyone in the world!<br>
+Because no one is different than no one<br>
+Everyone is fuckin' like someone<br>
+And if you fell like I do,<br>
+take your hand and touch my balls,<br>
+and sing along this fuckin' song!<br>
+<br>
+Black people<br>
+are good at playing basketball!<br>
+Asians cook Chinee food on woks<br>
+Mexicans are great at leaving Mexico!<br>
+So suck on my cock<br>
+if you don't love everyone!<br>
+<br>
+White people can tuck<br>
+their shirts into their shorts!<br>
+They need Jews to fill their tax forms<br>
+Eskimos are best at hitting seals with clubs!<br>
+We could all learn from everyone lots of stuff<br>
+<br>
+Sex, them Europeans<br>
+do it with kids,<br>
+it's like their proud of it or something<br>
+It's legal in their countries<br>
+<br>
+Canadians, at age fifteen<br>
+can legally suck off dirty old man for money<br>
+No they can't!<br>
+OK, for free<br>
+That's right!<br>
+<br>
+Everyone in the world's good<br>
+because no one is<br>
+better than someone else is<br>
+I'm down with women's circumcision<br>
+So if you feel like I do,<br>
+(Your a homo)<br>
+Take your ballsack and your bongo drum,<br>
+and sing this gay ass little song<br>
+<br>
+Black people are good at stealing stereos!<br>
+They've got Jewish lawyers in court<br>
+Muslims are the best at flying into stuff<br>
+Not all Muslims, just most,<br>
+and all it takes is most<br>
+<br>
+Africans like lynching homosexuals<br>
+Cubans turn dildos into boats<br>
+Germans kidnap girls and<br>
+make them prostitutes<br>
+Everyone's special<br>
+in their own gay little way<br>
+<br>
+Arab girls have got to be sweaty<br>
+They put to death<br>
+if they show they tittie<br>
+That's baller shit,<br>
+I ain't even playin'<br>
+Lemme tell you<br>
+what's the same about the<br>
+Swedish, Chassidish<br>
+Jews, Kelly and Regis<br>
+They're all fuckin' crazy!<br>
+Except the Swedish,<br>
+they're just lazy,<br>
+and love the penis<br>
+Yeah, those ladies in Sweden<br>
+got enough VDs to turn<br>
+those dudes around them gay<br>
+And Frenchmen don't believe in bathing<br>
+and Haitians love a good earthquake<br>
+Caging a Mongol?<br>
+Russian tradition<br>
+Rape in the Congo?<br>
+As long as it's women<br>
+Taking a dump on someone else's culture<br>
+and making fun of them<br>
+just 'cause they're different<br>
+and making a song calling<br>
+their country stupid,<br>
+mixing the absurd with the true?<br>
+Don't to it<br>
+So if you hate racist humour,<br>
+get your pooper up,<br>
+and sing this fuckin' song!<br>
+<br>
+Black people are good<br>
+at wheelchair basketball<br>
+They got shot,<br>
+and now cannot walk<br>
+Pregnant girls are stupid and impossible<br>
+Everyone's good,<br>
+no one is better than someone<br>
+<br>
+White people can<br>
+show black people how to vote<br>
+Blacks could teach<br>
+them Jews to dance good<br>
+Blind black men can't play hockey,<br>
+'cause they're black<br>
+Helen Keller can't drive<br>
+because she's a woman<br>
+<br>
+Gary Coleman's gone<br>
+It was so sad, <br>
+he was so young<br>
+I mean he was like fifty-one<br>
+but it's sad.<br>
+because he looked like<br>
+he was nine years old<br>
+Whatchu' talkin' about, Rucka?<br>
+His wife did it!<br>
+<br>
+I love minorities
+    </p>
+    <img src="pictures/moodspictures/16racist.jpg"></div>
+  
+  
+  <div id="17effect" class="effects">
+    <p>Here's a little song I wrote<br>
+You might want to sing it note for note<br>
+Don't worry, be happy<br>
+In every life we have some trouble<br>
+When you worry you make it double<br>
+Don't worry, be happy<br>
+<br>
+Ooh, ooh ooh ooh oo-ooh<br>
+ooh oo-ooh ooh ooh oo-ooh<br>
+(Don't worry)<br>
+Ooh oo-ooh ooh ooh oo-ooh<br>
+(Be happy)<br>
+Ooh oo-ooh oo-ooh<br>
+(Don't worry, be happy)<br>
+Ooh, ooh ooh ooh oo-ooh<br>
+ooh oo-ooh ooh ooh oo-ooh<br>
+(Don't worry)<br>
+Ooh oo-ooh ooh ooh oo-ooh<br>
+(Be happy)<br>
+Ooh oo-ooh oo-ooh<br>
+(Don't worry, be happy)<br>
+<br>
+Ain't got no place to lay your head<br>
+Somebody came and took your bed<br>
+Don't worry, be happy<br>
+The land lord say your rent is late<br>
+He may have to litigate<br>
+Don't worry, be happy<br>
+(Look at me I'm happy)<br>
+<br>
+Ooh, ooh ooh ooh oo-ooh<br>
+ooh oo-ooh ooh ooh oo-ooh<br>
+(Don't worry)<br>
+Ooh oo-ooh ooh ooh oo-ooh<br>
+(Be Happy)<br>
+Ooh oo-ooh oo-ooh<br>
+Here I give you my phone number<br>
+When you worry call me, I make you happy<br>
+Ooh, ooh ooh ooh oo-ooh<br>
+ooh oo-ooh ooh ooh oo-ooh<br>
+(Don't worry)<br>
+Ooh oo-ooh ooh ooh oo-ooh<br>
+(Be happy)<br>
+Ooh oo-ooh oo-ooh<br>
+<br>
+Ain't got no cash, ain't got no style<br>
+Ain't got no gal to make you smile<br>
+But don't worry, be happy<br>
+'Cause when you worry your face will frown<br>
+And that will bring everybody down<br>
+So don't worry, be happy<br>
+Don't worry, be happy now<br>
+<br>
+Ooh, ooh ooh ooh oo-ooh<br>
+ooh oo-ooh ooh ooh oo-ooh<br>
+(Don't worry)<br>
+Ooh oo-ooh ooh ooh oo-ooh<br>
+(Be happy)<br>
+Ooh oo-ooh oo-ooh<br>
+Don't worry, be happy<br>
+Ooh, ooh ooh ooh oo-ooh<br>
+ooh oo-ooh ooh ooh oo-ooh<br>
+(Don't worry)<br>
+Ooh oo-ooh ooh ooh oo-ooh<br>
+(Be happy)<br>
+Ooh oo-ooh oo-ooh<br>
+Don't worry, be happy<br>
+<br>
+Now there, is this song I wrote<br>
+I hope you learned it note for note<br>
+Like good little children<br>
+Don't worry, be happy<br>
+Listen to what I say<br>
+In your life expect some trouble<br>
+When you worry you make it double<br>
+Don't worry, be happy, be happy now<br>
+<br>
+Ooh, ooh ooh ooh oo-ooh<br>
+ooh oo-ooh ooh ooh oo-ooh<br>
+(Don't worry)<br>
+Ooh oo-ooh ooh ooh oo-ooh<br>
+(Be happy)<br>
+Ooh oo-ooh oo-ooh<br>
+Don't worry, be happy<br>
+Ooh, ooh ooh ooh oo-ooh<br>
+ooh oo-ooh ooh ooh oo-ooh<br>
+(Don't worry)<br>
+Ooh oo-ooh ooh ooh oo-ooh<br>
+(Be happy)<br>
+Ooh oo-ooh oo-ooh<br>
+Don't worry, be happy<br>
+<br>
+Ooh, ooh ooh ooh oo-ooh<br>
+ooh oo-ooh ooh ooh oo-ooh<br>
+(Don't worry)<br>
+Ooh oo-ooh ooh ooh oo-ooh<br>
+(Don't worry, don't worry,<br>
+don't do it, be happy)<br>
+Ooh oo-ooh oo-ooh<br>
+(Put a smile on your face,<br>
+don't bring everybody down)<br>
+Ooh, ooh ooh ooh oo-ooh<br>
+ooh oo-ooh ooh ooh oo-ooh<br>
+(Don't worry)<br>
+Ooh oo-ooh ooh ooh oo-ooh<br>
+(It will soon pass, whatever it is)<br>
+Ooh oo-ooh oo-ooh<br>
+Don't worry, be happy<br>
+Ooh oo-ooh oo-ooh<br>
+I'm not worried, I'm happy<br>
+
+    </p>
+    <img src="pictures/moodspictures/17worried.jpg"></div>
+  
+  
+  <div id="18effect" class="effects">
+    <p>I was walkin' through the city streets<br>
+And a man walks up to me<br>
+and hands me the latest energy drink<br>
+&quot;Run faster, jump higher&quot;<br>
+Man, I'm not gonna let you poison me<br>
+<br>
+I threw it on the ground<br>
+You must think I'm a joke<br>
+I ain't gonna be part of your system<br>
+Man!<br>
+Pump that garbage<br>
+in another man's veins<br>
+<br>
+I go to my favorite hot dog stand<br>
+And the dude says,<br>
+&quot;You come here all the time! Here's one for free.&quot;<br>
+I said, &quot;Man!<br>
+What do I look like?<br>
+A charity case?&quot;<br>
+<br>
+I took it and threw it on the ground!<br>
+I don't need your handouts!<br>
+I'm an adult!<br>
+Please!<br>
+You can't buy me hot dog, man!<br>
+<br>
+At the farmer's market<br>
+with my so called girlfriend<br>
+She hands me her cell phone,<br>
+says it's my dad<br>
+Man, this ain't my dad!<br>
+This is a cell phone!<br>
+<br>
+I threw it on the ground!<br>
+What, you think I'm stupid?<br>
+I'm not a part of your system<br>
+My dad's not a phone!<br>
+DUH!<br>
+<br>
+Some poser hands me<br>
+cake at a birthday party<br>
+Whatcha want me to do with this?<br>
+Eat it?<br>
+<br>
+Happy birthday to the ground!<br>
+I threw the rest of the cake, too!<br>
+Welcome to the real word, jackass!<br>
+<br>
+So many things to<br>
+throw on the ground<br>
+Like this, and this,<br>
+and that, and even this<br>
+I'm an ADULT!<br>
+<br>
+Two Hollywood phonies<br>
+try to give me their autograph<br>
+GROUND!<br>
+Nobody wants your autograph,<br>
+phonies!<br>
+<br>
+Then the two phonies got up<br>
+Turned out they had a taser<br>
+And they tased me in the butthole<br>
+<br>
+Fell to the ground<br>
+The phonies didn't let up<br>
+Tasin' on my butthole over and over<br>
+<br>
+I was screamin' and squirmin'<br>
+My butthole was on fire<br>
+The moral of the story is<br>
+<br>
+You can't trust the system<br>
+<br>
+Man!
+    </p>
+    <img src="pictures/moodspictures/18high.jpg"></div>
+  
+  
+  <div id="19effect" class="effects">
+    <p>Hey, I just met you,<br>
+And this is crazy,<br>
+But here's my number,<br>
+So call me, maybe!<br>
+<br>
+It's hard to look right<br>
+At you baby,<br>
+But here's my number,<br>
+So call me, maybe!<br>
+<br>
+Hey, I just met you,<br>
+And this is crazy,<br>
+But here's my number,<br>
+So call me, maybe!<br>
+<br>
+And all the other boys,<br>
+Try to chase me,<br>
+But here's my number,<br>
+So call me, maybe!<br>
+<br>
+You took your time with the call,<br>
+I took no time with the fall<br>
+You gave me nothing at all,<br>
+But still, you're in my way<br>
+<br>
+I beg, and borrow and steal<br>
+At first sight and it's real<br>
+I didn't know I would feel it,<br>
+But it's in my way<br>
+<br>
+Your stare was holdin',<br>
+Ripped jeans, skin was showin'<br>
+Hot night, wind was blowin'<br>
+Where you think you're going, baby?<br>
+<br>
+Hey, I just met you,<br>
+And this is crazy,<br>
+But here's my number,<br>
+So call me, maybe!<br>
+<br>
+It's hard to look right<br>
+At you baby,<br>
+But here's my number,<br>
+So call me, maybe!<br>
+<br>
+Hey, I just met you,<br>
+And this is crazy,<br>
+But here's my number,<br>
+So call me, maybe!<br>
+<br>
+And all the other boys,<br>
+Try to chase me,<br>
+But here's my number,<br>
+So call me, maybe!<br>
+<br>
+Before you came into my life<br>
+I missed you so bad<br>
+I missed you so bad<br>
+I missed you so, so bad<br>
+<br>
+Before you came into my life<br>
+I missed you so bad<br>
+And you should know that<br>
+I missed you so, so bad (bad, bad)<br>
+<br>
+It's hard to look right<br>
+At you baby,<br>
+But here's my number,<br>
+So call me, maybe!<br>
+<br>
+Hey, I just met you,<br>
+And this is crazy,<br>
+But here's my number,<br>
+So call me, maybe!<br>
+<br>
+And all the other boys,<br>
+Try to chase me,<br>
+But here's my number,<br>
+So call me, maybe!<br>
+<br>
+Before you came into my life<br>
+I missed you so bad<br>
+I missed you so bad<br>
+I missed you so, so bad<br>
+<br>
+Before you came into my life<br>
+I missed you so bad<br>
+And you should know that<br>
+<br>
+So call me, maybe!<br>
+
+    </p>
+    <img src="pictures/moodspictures/19needy.jpg"></div>
+  
+  
+  <div id="20effect" class="effects">
+    <p>Hakuna Matata!<br>
+What a wonderful phrase<br>
+<br>
+Hakuna Matata!<br>
+Ain't no passing craze<br>
+<br>
+It means no worries<br>
+For the rest of your days<br>
+<br>
+It's our problem-free philosophy<br>
+Hakuna Matata!<br>
+<br>
+Hakuna Matata!<br>
+<br>
+Hakuna Matata?<br>
+<br>
+Yeah. It's our motto!<br>
+<br>
+What's a motto?<br>
+<br>
+Nothin'! What's-a-motto with you?!<br>
+<br>
+Those two words will solve all your problems.<br>
+<br>
+That's right. Take Pumbaa here<br>
+Why...when he was a young warthog<br>
+<br>
+When I was a young warthog<br>
+<br>
+Very nice<br>
+<br>
+Thanks.<br>
+<br>
+He found his aroma lacked a certain appeal<br>
+He could clear the savannah after ev'ry meal<br>
+<br>
+I'm a sensitive soul though I seem thick-skinned<br>
+And it hurt that my friends never stood downwind<br>
+<br>
+And, oh, the shame<br>
+<br>
+Oh, the shame!<br>
+<br>
+Thought of changin' my name<br>
+<br>
+What's in a name?<br>
+<br>
+And I got downhearted<br>
+<br>
+How did ya feel?<br>
+<br>
+Ev'rytime that I...<br>
+<br>
+Hey, Pumbaa! Not in front of the kids!<br>
+<br>
+Oh, sorry.<br>
+<br>
+Hakuna Matata!<br>
+What a wonderful phrase<br>
+Hakuna Matata!<br>
+Ain't no passing craze<br>
+<br>
+It means no worries for the rest of your days<br>
+<br>
+It's our problem-free philosophy<br>
+Hakuna Matata!<br>
+
+    </p>
+    <img src="pictures/moodspictures/20unsure.jpg"></div>
+  
+  
+  <div id="21effect" class="effects">
+    <p>He never tells me that<br>
+he's sick of this house<br>
+He never says<br>
+why don't you get off that couch?<br>
+He don't cost me nothin'<br>
+when he wants to go out<br>
+I want you to love me<br>
+like my dog<br>
+<br>
+He never says<br>
+I need a new attitude<br>
+Him and my sister<br>
+ain't always in a feud<br>
+When I leave the seat up<br>
+he don't think that it's rude<br>
+I want you to love me<br>
+like my dog does Baby!<br>
+<br>
+When I come home,<br>
+want you to just go crazy<br>
+He never looks at me<br>
+like he might hate me<br>
+I want you to love me<br>
+like my dog<br>
+<br>
+He never acts<br>
+like he don't care for my friends<br>
+He never asks me<br>
+where in the hell have you been?<br>
+He don't play dead<br>
+when I wanna pet him<br>
+I want you to love me<br>
+like my dog does honey!<br>
+<br>
+He never says,<br>
+'I wish you made more money'<br>
+He always thinks<br>
+that pull my finger's funny<br>
+I want you to love me<br>
+like my dog<br>
+<br>
+He don't get mad at me<br>
+and throw a major fit<br>
+When I say his sister is a bitch!<br>
+<br>
+I want you to love me<br>
+like my dog does baby<br>
+When I come home,<br>
+want you to just go crazy<br>
+He never looks at me<br>
+like he might hate me<br>
+I want you to love me<br>
+like my dog!<br>
+<br>
+I want you to love me like my dog does Baby!
+    </p>
+    <img src="pictures/moodspictures/21chilled.jpeg"></div>
+  
+  
+  <div id="22effect" class="effects">
+    <p>(Bum bum bum, ba-dum ba-dum)<br>
+A duck walked up to a lemonade stand<br>
+And he said to the man,<br>
+running the stand<br>
+&quot;Hey! (Bum bum bum)<br>
+Got any grapes?&quot;<br>
+The man said<br>
+&quot;No, we just sell lemonade.<br>
+But it&rsquo;s cold<br>
+And it's fresh<br>
+And it&rsquo;s all home-made.<br>
+Can I get you a glass?&quot;<br>
+The duck said<br>
+&ldquo;I&rsquo;ll pass.&rdquo;<br>
+<br>
+Then he waddled away<br>
+(Waddle waddle)<br>
+'Til the very next day<br>
+(Bum bum bum bum Bum da-dum)<br>
+<br>
+When the duck walked up<br>
+to the lemonade stand<br>
+And he said to the man,<br>
+running the stand<br>
+&quot;Hey! (Bum bum bum) Got any grapes?<br>
+The man said<br>
+&quot;No, like I said yesterday<br>
+We just sell lemonade. OK?<br>
+Why not give it a try?&quot;<br>
+The duck said<br>
+&quot;Goodbye.&quot;<br>
+ <br>
+<br>
+Then he waddled away<br>
+(Waddle waddle)<br>
+Then he waddled away<br>
+(Waddle waddle waddle)<br>
+Then he waddled away<br>
+(Waddle waddle)<br>
+'Til the very next day<br>
+(Bum bum bum bum bum ba-dum)<br>
+<br>
+When the duck walked up<br>
+to the lemonade stand<br>
+And he said to the man running the stand<br>
+&quot;Hey! (bum bum bum) Got any grapes?<br>
+The man said<br>
+&quot;Look, this is getting old<br>
+I mean, lemonade&rsquo;s all we&rsquo;ve ever sold<br>
+Why not give it a go?&quot;<br>
+The duck said<br>
+&ldquo;How 'bout, no.&rdquo;<br>
+<br>
+Then he waddled away<br>
+(Waddle waddle)<br>
+Then he waddled away<br>
+(Waddle waddle waddle)<br>
+Then he waddled away<br>
+(Waddle waddle)<br>
+'Til the very next day<br>
+(Bum bum bum bum bum ba-dum)<br>
+ <br>
+<br>
+When the duck walked up to the lemonade stand<br>
+And he said to the man running the stand<br>
+&quot;Hey! (Bum bum bum) Got any grapes?&quot;<br>
+The man said<br>
+&quot;THAT&rsquo;S IT!<br>
+If you don&rsquo;t stay away, Duck<br>
+I&rsquo;ll glue you to a tree<br>
+and leave you there all day, stuck<br>
+So don&rsquo;t get to close!&quot;<br>
+The duck said<br>
+&quot;Adios.&quot;<br>
+<br>
+Then he waddled away<br>
+(Waddle waddle)<br>
+Then he waddled away<br>
+(Waddle waddle waddle)<br>
+Then he waddled away<br>
+(Waddle waddle)<br>
+'Til the very next day<br>
+(Bum bum bum bum bum ba-dum)<br>
+<br>
+When the duck walked up<br>
+to the lemonade stand<br>
+And he said to the man running the stand<br>
+&quot;Hey! (Bum bum bum) got any glue?&quot;<br>
+&quot;What?&quot;<br>
+&quot;Got any glue?&quot;<br>
+&quot;No, why would I&ndash; oh!&quot;<br>
+And one more question for you<br>
+&quot;Got any grapes?&quot;<br>
+(Bum bum bum, bum bum bum)<br>
+<br>
+And the man just stopped<br>
+Then he started to smile<br>
+He started to laugh<br>
+He laughed for a while<br>
+He said<br>
+&ldquo;Come on duck, let&rsquo;s walk to the store<br>
+I&rsquo;ll buy you some grapes<br>
+So you won&rsquo;t have to ask anymore.&rdquo;<br>
+So they walked to the store<br>
+And the man bought some grapes<br>
+He gave one to the duck and the duck said<br>
+&ldquo;Hmm... No thanks.<br>
+But you know what sounds good?<br>
+It would make my day<br>
+Do you think this store...<br>
+Do you think this store...<br>
+Do you think this store<br>
+...has any&#8230; lemonade?&rdquo;<br>
+<br>
+Then he waddled away<br>
+(Waddle waddle)<br>
+Then he waddled away<br>
+(Waddle waddle waddle)<br>
+Then he waddled away<br>
+(Waddle waddle)
+    </p>
+    <img src="pictures/moodspictures/22childish.jpg"></div>
+  
+  
+  <div id="23effect" class="effects">
+    <p>Waiting for the bus in the rain, in the rain<br>
+Wait-waiting for the bus in the rain<br>
+<br>
+Waiting for the bus in the rain<br>
+<br>
+Waiting for the bus<br>
+Where is the bus?<br>
+The bus is late<br>
+Waiting for the bus in the rain (in the rain)<br>
+When the bus come?<br>
+Where the bus at?<br>
+Got my bus pass<br>
+Bus in much better than a train (than a train)<br>
+<br>
+Take phone pictures<br>
+While I&rsquo;m waiting at the bus stop<br>
+Bus not here<br>
+Why the bus so late?<br>
+<br>
+I&rsquo;m waiting for the bus in the rain<br>
+Wishing I was on the bus<br>
+When the bus drive around your estate<br>
+<br>
+Oh, good here comes the bus-<br>
+Aw, shit! It&rsquo;s a different bus<br>
+Not the right bus<br>
+Not the bus I need<br>
+ <br>
+<br>
+Now I&rsquo;m waiting for the bus in the rain<br>
+At another stop<br>
+Bus ain&rsquo;t got a real high speed<br>
+<br>
+Waiting for the bus<br>
+Took a picture of another bus<br>
+Waiting for the bus in the rain<br>
+I&rsquo;ve been waiting for the bus<br>
+Since the sun came up<br>
+But the sun ain&rsquo;t out no more<br>
+Cause it&rsquo;s grey<br>
+<br>
+Waiting for the bus<br>
+There&rsquo;s a grey one<br>
+Blue one<br>
+A red one<br>
+All of &lsquo;em turned away<br>
+<br>
+I&rsquo;ve been waiting for the bus<br>
+Gotta catch a bus<br>
+Gotta watch news<br>
+Got a regimented plan for the day<br>
+Bus<br>
+<br>
+Waiting for the bus in the rain, in the rain<br>
+Wait-waiting for the bus in the rain<br>
+Waiting for the bus in the rain, in the rain<br>
+Wait-waiting for the bus in the rain<br>
+ <br>
+<br>
+Now there&rsquo;s other people waiting at the bus stop<br>
+Hey, where&rsquo;s your bus pass, boy?<br>
+When you&rsquo;re waiting for the bus in the rain,<br>
+have your bus pass ready<br>
+or the people on the bus get annoyed!<br>
+<br>
+I&rsquo;m waiting for the bus<br>
+Like I do everyday on my way home<br>
+Waiting for the bus in the rain<br>
+(At least on the days when it&rsquo;s raining<br>
+And I&rsquo;m waiting for the bus<br>
+Cause the other days ain&rsquo;t the same)<br>
+Tweet<br>
+<br>
+Waiting for the bus in the rain, in the rain<br>
+Wait-waiting for the bus in the rain<br>
+<br>
+Waiting for a bus in the rain<br>
+<br>
+Waiting for the bus so hard sometimes<br>
+When the bus come late to the stop<br>
+Waiting for the bus in the rain man<br>
+I prefer sunshine<br>
+Should be waiting for the bus with a mop<br>
+<br>
+&quot;Get it? That's a joke.&quot;<br>
+&ldquo;Hey, where are you going?<br>
+I thought you were waiting for the bus too.&quot;<br>
+&quot;Oh look, there it is!&quot;
+    </p>
+    <img src="pictures/moodspictures/23weird.jpg"></div>
+  
+  
+  <div id="24effect" class="effects">
+    <p>I used to think that I could not go on<br>
+And life was nothing but an awful song<br>
+But now I know the meaning of true love<br>
+I'm leaning on the everlasting arms<br>
+<br>
+If I can see it, then I can do it<br>
+If I just believe it, there's nothing to it<br>
+<br>
+[Chorus:]<br>
+I believe I can fly<br>
+I believe I can touch the sky<br>
+I think about it every night and day<br>
+Spread my wings and fly away<br>
+I believe I can soar<br>
+I see me running through that open door<br>
+I believe I can fly<br>
+I believe I can fly<br>
+I believe I can fly<br>
+<br>
+See I was on the verge of breaking down<br>
+Sometimes silence can seem so loud<br>
+There are miracles in life I must achieve<br>
+But first I know it starts inside of me, oh<br>
+<br>
+If I can see it, then I can be it<br>
+If I just believe it, there's nothing to it<br>
+<br>
+[Chorus]<br>
+<br>
+Hey, cause I believe in me, oh<br>
+<br>
+If I can see it, then I can do it (I can do it)<br>
+If I just believe it, there's nothing to it<br>
+<br>
+[Chorus]<br>
+<br>
+Hey, if I just spread my wings<br>
+I can fly<br>
+I can fly<br>
+I can fly, hey<br>
+If I just spread my wings<br>
+I can fly-eye-eye-eye<br>
+Hum, fly-eye-eye<br>
+<br>
+
+    </p>
+    <img src="pictures/moodspictures/24doubtful.jpg"></div>
+  
+  
+  <div id="25effect" class="effects">
+    <p>Hey there, Delilah<br>
+What's it like in New York City?<br>
+I'm a thousand miles away<br>
+But girl, tonight you look so pretty<br>
+Yes you do<br>
+Times Square can't shine as bright as you<br>
+I swear it's true<br>
+<br>
+Hey there, Delilah<br>
+Don't you worry about the distance<br>
+I'm right there if you get lonely<br>
+Give this song another listen<br>
+Close your eyes<br>
+Listen to my voice, it's my disguise<br>
+I'm by your side<br>
+<br>
+Oh it's what you do to me<br>
+Oh it's what you do to me<br>
+Oh it's what you do to me<br>
+Oh it's what you do to me<br>
+What you do to me<br>
+<br>
+Hey there, Delilah<br>
+I know times are getting hard<br>
+But just believe me, girl<br>
+Someday I'll pay the bills with this guitar<br>
+We'll have it good<br>
+We'll have the life we knew we would<br>
+My word is good<br>
+<br>
+Hey there, Delilah<br>
+I've got so much left to say<br>
+If every simple song I wrote to you<br>
+Would take your breath away<br>
+I'd write it all<br>
+Even more in love with me you'd fall<br>
+We'd have it all<br>
+<br>
+Oh it's what you do to me<br>
+Oh it's what you do to me<br>
+Oh it's what you do to me<br>
+Oh it's what you do to me<br>
+<br>
+A thousand miles seems pretty far<br>
+But they've got planes and trains and cars<br>
+I'd walk to you if I had no other way<br>
+Our friends would all make fun of us<br>
+and we'll just laugh along because we know<br>
+That none of them have felt this way<br>
+Delilah, I can promise you<br>
+That by the time that we get through<br>
+The world will never ever be the same<br>
+And you're to blame<br>
+<br>
+Hey there, Delilah<br>
+You be good and don't you miss me<br>
+Two more years and you'll be done with school<br>
+And I'll be making history like I do<br>
+You'll know it's all because of you<br>
+We can do whatever we want to<br>
+Hey there, Delilah, here's to you<br>
+This one's for you<br>
+<br>
+Oh it's what you do to me<br>
+Oh it's what you do to me<br>
+Oh it's what you do to me<br>
+Oh it's what you do to me<br>
+What you do to me.<br>
+
+    </p>
+    <img src="pictures/moodspictures/25simple.jpg"></div>
+  
+  
+  <div id="26effect" class="effects">
+    <p>Hello, it's me<br>
+I was wondering if after all<br>
+these years you'd like to meet<br>
+To go over everything<br>
+They say that time's supposed to heal ya<br>
+But I ain't done much healing<br>
+Hello, can you hear me?<br>
+I'm in California dreaming about<br>
+who we used to be<br>
+When we were younger and free<br>
+I've forgotten how it felt<br>
+Before the world fell at our feet<br>
+<br>
+There's such a difference between us<br>
+And a million miles<br>
+<br>
+Hello from the other side<br>
+I must have called a thousand times<br>
+To tell you I'm sorry<br>
+for everything that I've done<br>
+But when I call you never seem to be home<br>
+Hello from the outside<br>
+At least I can say that I've tried<br>
+To tell you I'm sorry for breaking your heart<br>
+But it don't matter,<br>
+it clearly doesn't tear you apart<br>
+Anymore<br>
+<br>
+Hello, how are you?<br>
+It's so typical of me to talk about myself,<br>
+I'm sorry<br>
+I hope that you're well<br>
+Did you ever make it out of that town<br>
+Where nothing ever happened?<br>
+<br>
+It's no secret that the both of us<br>
+Are running out of time<br>
+<br>
+So hello from the other side<br>
+(other side)<br>
+I must have called a thousand times<br>
+(thousand times)<br>
+To tell you I'm sorry<br>
+for everything that I've done<br>
+But when I call you never seem to be home<br>
+Hello from the outside (outside)<br>
+At least I can say that I've tried (I've tried)<br>
+To tell you I'm sorry for breaking your heart<br>
+But it don't matter,<br>
+it clearly doesn't tear you apart<br>
+Anymore<br>
+<br>
+Anymore<br>
+Anymore<br>
+Anymore<br>
+Anymore<br>
+<br>
+Hello from the other side (other side)<br>
+I must have called a thousand times<br>
+(thousand times)<br>
+To tell you I'm sorry<br>
+for everything that I've done<br>
+But when I call you never seem to be home<br>
+Hello from the outside<br>
+(outside)<br>
+At least I can say that I've tried<br>
+(I've tried)<br>
+To tell you I'm sorry<br>
+for breaking your heart<br>
+But it don't matter,<br>
+it clearly doesn't tear you apart<br>
+Anymore<br>
+
+    </p>
+    <img src="pictures/moodspictures/26disappointed.jpg"></div>
+  
+  
+  <div id="27effect" class="effects">
+    <p>He was sitting there beside me<br>
+throwing doubles down<br>
+When he ordered up his third one<br>
+he looked around<br>
+Then he looked at me,<br>
+said I do believe I'll have one more<br>
+He said I hate this bar<br>
+and I hate to drink<br>
+But on second thought tonight<br>
+I think I hate everything<br>
+<br>
+Then he opened up his bill-fold<br>
+and threw a 20 down<br>
+And the faded photograph fell out<br>
+and hit the ground<br>
+And I picked it up, he said thank you bud,<br>
+I put it in his hand<br>
+He said I probably ought<br>
+to throw this one away<br>
+'Cause she's the reason I feel this way,<br>
+I hate everything<br>
+<br>
+I hate my job, I hate my life and if it weren't for my two kids I'd hate my ex-wife<br>
+I know I should move on and try to start again<br>
+But I just can't get over her leaving me for him<br>
+Then he shook his head and looked down at his ring and said I hate everything<br>
+<br>
+He said one bedroom apartment where I get my mail<br>
+Is really not a home, it's more like a jail<br>
+With a swimming pool and a parking lot view, man that's just great<br>
+I hate summer, winter, fall and spring<br>
+Red and yellow, purple, blue and green, I hate everything<br>
+<br>
+<br>
+So I pulled out my phone and I called my house<br>
+I said babe I'm comin' home, we're gonna work this out<br>
+I paid for his drinks and I told him thanks, thanks for everything
+    </p>
+    <img src="pictures/moodspictures/27angry.jpg"></div>
+  
+  
+  <div id="28effect" class="effects">
+    <p>Today I don't feel like doing anything<br>
+I just wanna lay in my bed<br>
+Don't feel like picking up my phone<br>
+So leave a message at the tone<br>
+'Cause today I swear I'm not doing anything.<br>
+<br>
+Uh!<br>
+I'm gonna kick my feet up<br>
+Then stare at the fan<br>
+Turn the TV on, throw my hand in my pants<br>
+Nobody's gonna tell me I can't<br>
+<br>
+I'll be lounging on the couch,<br>
+Just chillin' in my snuggie<br>
+Click to MTV, so they can teach me how to dougie<br>
+'Cause in my castle I'm the freaking man<br>
+<br>
+Oh, yes I said it<br>
+I said it<br>
+I said it 'cause I can<br>
+<br>
+Today I don't feel like doing anything<br>
+I just wanna lay in my bed<br>
+Don't feel like picking up my phone<br>
+So leave a message at the tone<br>
+'Cause today I swear I'm not doing anything<br>
+<br>
+Nothing at all!<br>
+Ooh, hoo, ooh, hoo, ooh, ooh-ooh<br>
+Nothing at all<br>
+Ooh, hoo, ooh, hoo, ooh, ooh-ooh<br>
+<br>
+Tomorrow I'll wake up, do some P90X<br>
+Meet a really nice girl, have some really nice sex<br>
+And she's gonna scream out:<br>
+'This is Great' (Oh my God, this is great!)<br>
+Yeah<br>
+<br>
+I might mess around, and get my college degree<br>
+I bet my old man will be so proud of me<br>
+But sorry pops, you'll just have to wait<br>
+Haha<br>
+<br>
+Oh, yes I said it<br>
+I said it<br>
+I said it 'cause I can<br>
+<br>
+Today I don't feel like doing anything<br>
+I just wanna lay in my bed<br>
+Don't feel like picking up my phone<br>
+So leave a message at the tone<br>
+'Cause today I swear I'm not doing anything<br>
+<br>
+No, I ain't gonna comb my hair<br>
+'Cause I ain't going anywhere<br>
+No, no, no, no, no, no, no, no, no<br>
+I'll just strut in my birthday suit<br>
+And let everything hang loose<br>
+Yeah, yeah, yeah, yeah, yeah,<br>
+yeah, yeah, yeah, yeah, yeah<br>
+<br>
+Ooh<br>
+Today I don't feel like doing anything<br>
+I just wanna lay in my bed<br>
+Don't feel like picking up my phone<br>
+So leave a message at the tone<br>
+'Cause today I swear I'm not doing anything<br>
+<br>
+Nothing at all<br>
+Ooh, hoo, ooh, hoo, ooh, ooh-ooh<br>
+Nothing at all<br>
+Ooh, hoo, ooh, hoo, ooh, ooh-ooh<br>
+Nothing at all
+    </p>
+    <img src="pictures/moodspictures/28lazy.jpg"></div>
+  
+  
+  <div id="29effect" class="effects">
+    <p>Did I disappoint you or let you down?<br>
+Should I be feeling guilty<br>
+or let the judges frown?<br>
+'Cause I saw the end<br>
+before we'd begun,<br>
+Yes I saw you were blinded<br>
+and I knew I had won.<br>
+So I took what's mine by eternal right.<br>
+Took your soul out into the night.<br>
+It may be over but it won't stop there,<br>
+I am here for you if you'd only care.<br>
+You touched my heart you touched my soul.<br>
+You changed my life and all my goals.<br>
+And love is blind and that I knew when,<br>
+My heart was blinded by you.<br>
+I've kissed your lips and held your hand.<br>
+Shared your dreams and shared your bed.<br>
+I know you well, I know your smell.<br>
+I've been addicted to you.<br>
+<br>
+<br>
+Goodbye my lover.<br>
+Goodbye my friend.<br>
+You have been the one.<br>
+You have been the one for me.<br>
+<br>
+I am a dreamer and when I wake,<br>
+You can't break my spirit<br>
+- it's my dreams you take.<br>
+And as you move on, remember me,<br>
+Remember us and all we used to be<br>
+I've seen you cry, I've seen you smile.<br>
+I've watched you sleeping for a while.<br>
+I'd be the father of your child.<br>
+I'd spend a lifetime with you.<br>
+I know your fears and you know mine.<br>
+We've had our doubts but now we're fine,<br>
+And I love you, I swear that's true.<br>
+I cannot live without you.<br>
+<br>
+<br>
+Goodbye my lover.<br>
+Goodbye my friend.<br>
+You have been the one.<br>
+You have been the one for me.<br>
+<br>
+And I still hold your hand in mine.<br>
+In mine when I'm asleep.<br>
+And I will bare my soul in time,<br>
+When I'm kneeling at your feet.<br>
+<br>
+<br>
+Goodbye my lover.<br>
+Goodbye my friend.<br>
+You have been the one.<br>
+You have been the one for me.<br>
+<br>
+I'm so hollow, baby, I'm so hollow.<br>
+I'm so, I'm so, I'm so hollow.<br>
+I'm so hollow, baby, I'm so hollow.<br>
+I'm so, I'm so, I'm so hollow.
+    </p>
+    <img src="pictures/moodspictures/29rejected.jpg"></div>
+
+  
+  <!--///////////////////////////////////End effects/////////////////////////////////////////-->
+  
+</div>
+
+<script src="script.js"></script>
+    
+</body>
+
+
+</html>
