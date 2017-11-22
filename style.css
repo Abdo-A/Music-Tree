@@ -1,0 +1,154 @@
+/*Start Body*/
+
+* {
+  margin:0;padding:0;
+  box-sizing: border-box;
+}
+*::selection{background:#abaaa5ad;}
+body {
+  background: linear-gradient(to right, #29aaff, #9accff);
+  background: url('pictures/pagebackground_opt.jpg'); background-size:cover;
+  overflow-x: hidden; overflow-y:auto;
+}
+.container {padding: 0 5vw 0;}
+.header {font-size:5vw; text-align: center; margin-top:2vh; color:#463333;font-family: 'Merienda', cursive; word-spacing: 15px;cursor:default; margin-bottom: -10px;animation:20s 5s infinite musicdance;}
+.logo {position:absolute;top:1vh;left:0.5vw;user-select: none;}
+.logo img:first-of-type {width:90px;height:90px}
+.logo img:last-of-type {position:absolute; left:89vw; top:1vh; width:90px;height:40px;opacity:0.7;}
+.paragraph {font-size:2vw; text-align: center; margin-top:1vh; color:#0A6B43;font-family: 'Indie Flower', cursive;font-weight:900;}
+#firsts, #seconds, #thirds, #fourths, #fifths, #sixths, #sevenths {position:absolute;font-weight:200;user-select: none; color:#a37634;font-family: 'Indie Flower', cursive; z-index:-2;}
+#firsts {top:10vh; left:75vw; color:#8e6833} #seconds {top:85vh; left:30vw} #thirds {top:80vh; left:94vw; color:#6a4002; transform:rotate(90deg)}
+#fourths {top:75vh; left:-4vw; transform:rotate(-90deg); color:#d4ab6d} #fifths {top:50vh; left:94vw; color:#6a4002; transform:rotate(80deg)} #sixths {top:74vh; left:52vw}
+#sevenths {top:40vh; left:-7vw;transform:rotate(-80deg); color:#d4ab6d}
+.ques {text-align: center;margin-bottom: -25px;font-weight:800;color:#000;font-family: 'Indie Flower', cursive;
+		font-size: 2vw;}
+.moods {
+  width:19.6%; height:6vh; line-height:6vh; border-radius: 20px;display: inline-block;text-align: center; margin-top:6vh; 
+  background: linear-gradient(to right, #000000, #373b44);font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;cursor:pointer;
+  border:1px solid #CCC;box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);color: #5a2d06; font-weight:900; background: url('pictures/moodsbackground.jpg');font-size: 2vw;font-family: 'Indie Flower', cursive; user-select: none;
+}
+.moods:hover {
+  box-shadow: 0 0 50px -1px rgba(0,0,0,0.5);
+}
+
+
+#backbutton {
+  position: absolute;
+  top:2vh; right:5vw;
+  width:20vw; height:30px; line-height: 30px; font-size:30px;
+  border: none;
+  border-radius: 10px;
+  cursor:pointer; font-weight: 600;
+  z-index: 2;
+  background-color:#DDD;
+  display: none
+}
+#backbutton:hover {
+  box-shadow: 0 0 50px -1px rgba(0,0,0,0.5); background-color:#BBB;
+}
+
+/*End Body*/
+
+
+/*Start Effects*/
+.effects {display: none;}
+.effects p {position:absolute;width: 40vw;height:80vh;top:16vh;left:5vw;overflow:auto;border:2px solid #6f4108; text-align: center;word-wrap: break-word;
+            background: url('pictures/lyrics%20background.jpg'); background-size:cover;
+            font-family: 'Indie Flower', cursive; color: #fff; font-size: 5vh; padding: 40px 10px 40px;font-weight:700;
+            border-radius: 20px 0 0 20px; user-select: none;box-shadow: 4px 4px 2px #333
+			}
+.effects p::-webkit-scrollbar { 
+    background-color: darkgrey;
+  border: 1px solid slategrey;
+}
+.effects img {position:absolute;width:40vw;height:60vh; top:25vh; right:5vw;border:2px solid white; animation: 2s forwards infinite picdance; border-radius: 20px;}
+
+
+/*End Effects*/
+
+
+/*Start Animations*/
+
+@keyframes destroy {
+  20%{transform:rotate(120deg);margin-top:6vh;}
+  80%{margin-top:30vh;}
+  100%{opacity:0;visibility: hidden}
+}
+@keyframes zooming {
+  0%{background-size:100vw 100vh;}
+  25%{background-size:300% 300%;}
+  50%{background-size:200% 200%}
+  75%{background-size:300% 300%;}
+  100%{background-size:100vw 100vh;}
+}
+@keyframes zoomingback {
+  0%{background-size:300% 300%;}
+  100%{background-size:100vw 135vh;}
+}
+
+@keyframes picdance {
+  0% {top:25vh; right:5vw;}
+  10% {top:30vh; right:4vw; box-shadow: 2px 4px 2px 0px #000}
+  20% {top:10vh; right:4vw; }
+  30% {top:5vh;right:0vw; box-shadow: 4px 2px 0px 2px #000}
+  40% {top:40vh; right:6vw;}
+  60% {top:0vh; right:10vw;box-shadow: 2px 0px 2px 0px #000}
+  80% {top:40vh; right:12vw;}
+  90% {top:25vh; right:15vw;}
+  100% {top:25vh; right:5vw;}
+}
+/*the initial one for picdance:0% {top:25vh; right:5vw;}20% {top:10vh; right:4vw;}40% {top:40vh; right:6vw;}60% {top:2vh; right:10vw;}80% {top:40vh; right:12vw;}100% {top:25vh; right:5vw;}*/
+
+@keyframes picbreath {
+	0% {width:40vw;height:60vh;top:25vh; bottom: 15vh ; right:5vw; left: 55vw}
+	20% {width: 30vw; height:50vh;top:30vh; bottom:20vh ; right:15vw; left:60vw}
+	40% {width:50vw; height:70vh;top:20vh; bottom:10vh ; right:0vw; left:50vw }
+	60% {width: 30vw; height:50vh;top:30vh; bottom:20vh ; right:15vw; left:60vw}
+	100% {width:40vw;height:60vh;top:25vh; bottom:15vh ; right:5vw; left: 55vw}
+}
+
+@keyframes wordsdance {
+	
+	0% {text-shadow: 2px 2px #AAA;}
+	50% {text-shadow: 3px 4px #AAA; height:65vh}
+	100% {text-shadow: 2px 2px #AAA;}
+}
+
+@keyframes musicdance {
+  2% {margin-top: 2vh;}
+  4% {margin-top: 1vh}
+  6% {margin-top: 3vh}
+  8% {margin-top: 1vh}
+  10% {margin-top: 3vh}
+  12% {margin-top:2vh}
+}
+
+/*End Animations*/
+
+/*Start Media*/
+@media (max-width:890px) {
+  .logo img:first-of-type {width:50px;height:50px}
+  .logo img:last-of-type {width:50px;height:20px;left:85vw}
+  .header {font-size:60px}
+  .paragraph {font-size:30px;color:#000}
+  .moods {float:left; width:33.333%;font-size:20px;}
+  .container {padding-bottom: 20px;}
+}
+@media (max-width:650px) {
+  .effects img {display:none;}
+  .effects p {width:85vw;left:7.5vw;top:14vh}
+}
+@media (max-width:500px) {
+  .header {font-size:32px; color:#004e0a;background-color:orange; margin-bottom:3vh;border-radius: 10px; border:2px solid grey;}
+  .logo {position:static; margin-left:25vw;margin-top:5vh;margin-bottom:-25px}
+  .logo img:first-of-type {width:35vw;height:20vh;position:static; margin-right:15px;}
+  .logo img:last-of-type {width:15vw;height:4vh;position:static; margin-bottom: 60px;}
+  .paragraph {font-size:20px;color:#FFF}
+  .moods {width:50%;}
+  #backbutton {width:35vw}
+  #seconds, #thirds, #fourths, #fifths, #sixths, #sevenths {display:none;}
+  .ques {font-size:20px;color:#FFF}
+}
+
+
+/*End Media*/
